@@ -1,0 +1,1 @@
+Python is a high-level programming language. Python has a simple and readable syntax. Developers can use Python for automation and scripting. Many universities teach Python as an introductory programming language. Python continues to be popular among software developers.
