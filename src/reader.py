@@ -13,3 +13,6 @@ def read_text_file(file_path):
 
     except OSError as error:
         raise OSError(f"Could not read file: {error}")
+    
+    except Exception as error:
+        raise Exception(f"An unexpected error occurred while reading the file: {error}")

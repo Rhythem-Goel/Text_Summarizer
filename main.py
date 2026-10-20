@@ -29,18 +29,13 @@ def main():
         print(f"\nInput file: {INPUT_FILE}")
         print(f"Total sentences: {len(sentences)}")
 
-        summary_length = int(
-            input("Enter number of sentences for summary: ")
-        )
+        summary_length = int(input("Enter number of sentences for summary: "))
 
         if summary_length <= 0:
             print("Summary length must be greater than zero.")
             return
 
-        summary = generate_summary(
-            sentences,
-            summary_length
-        )
+        summary = generate_summary(sentences,summary_length)
 
         with open(OUTPUT_FILE, "w", encoding="utf-8") as file:
             file.write(summary)
@@ -63,6 +58,9 @@ def main():
 
     except OSError as error:
         print(f"File error: {error}")
+
+    except Exception as error:
+        print(f"An unexpected error occurred: {error}")
 
 
 if __name__ == "__main__":
