@@ -1,4 +1,4 @@
-# ✂️ Text Summarizer
+# Text Summarizer
 
 A simple **rule-based, extractive text summarizer** written in Python. It reads a text file, scores each sentence using a set of rules, and picks the most important sentences to form a short summary. No AI or machine learning is used.
 
@@ -23,7 +23,6 @@ Text_Summarizer/
 │   ├── reader.py        # Reads the input file
 │   ├── preprocessor.py  # Splits text into sentences
 │   └── summarizer.py    # Scores sentences and builds the summary
-├── tests/               # Tests
 └── main.py              # Run this file
 ```
 
